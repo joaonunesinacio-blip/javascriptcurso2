@@ -1,29 +1,18 @@
-let numeroSecreto =  gerearNumeroAletorio();
+let listaDeNumerosSorteados = [];
+let numeroSecreto = 10;
+let numeroSecreto = gerarNumeroAleatorio();
+let tentativas = 1;
 
-function exibirTextoNaTela(tag, texto){
+function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
-    campo.innerHTML = textp;
+    campo.innerHTML = texto;
+    responsiveVoice.speak(texto 'Brazilian Portuguese Female',)
 }
 
-exibirTextoNaTela("h1", 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
-
-function verificarChute(){
-    let chute = document.querySelector('input').value;
-    console.log(chute == numeroSecreto);
-
-    if(chute == numeroSecreto){
-        exibirTextoNaTela('h1,'Acertou!)
-        exibirTextoNaTela('p', 'Vocẽ descobriu o número secreto!')
- } else {
-    if (chute > numeroSecreto){
-       exibirTextoNaTela9('p', 'O número secreto é menor')
-    } else {
-        exibirTextoNaTela('p', 'o número secreto é maior')
-    }
- }
+function exbirMensagemIncial() {
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 }
-function gerearNumeroAletorio(){
-    return parseInt(Math.random() * 10 + 1);   
 
-}
+exbirMensagemIncial();rearNumeroAletorio();
+
