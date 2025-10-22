@@ -36,3 +36,20 @@ function exibirTextoNaTela(tag, texto) {
         limparCampo
      }
  }
+
+ function gerarNumeroAleatorio() {
+    let numeroEscolhido = parseInt(Math.random() * 4 + 1);
+    if (listaDeNumerosSorteados.includes(numeroEscolhido)){
+        return gerarNumeroAleatorio();
+    } else {
+        listaDeNumerosSorteados.push(numeroEscolhido);
+        console.log(listaDeNumerosSorteados
+            return numeroEscolhido;
+        )
+    }
+ }
+
+ function limparCampo() {
+    chute  = document.querySelector('input');
+    chute.value = '';
+ }
