@@ -1,9 +1,14 @@
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'jogo do numero secreto';
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
+let numeroSecreto = gerarNumeroAleatorio();
+let tentativa = 1;
 
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'escolha um numero entre 1 e 10';
+function exibirTextoNaTela(){
+    let campo = document.querySelector(tag)
+    campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+}
 
-function verificarChute() {
-    console.log('o botao foi clicado!')
+function exibirMensagemInicial() {
+    exibirTextoNaTela
 }
